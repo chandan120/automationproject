@@ -7,6 +7,8 @@
         <methods>
           <include name="launchPage"/>
           <include name="setUpSuite"/>
+          <include name="tearDownMeth"/>
+          <include name="closeApp"/>
           <include name="launchApp"/>
         </methods>
       </class> <!-- src.main.testcases.LaunchPage -->

@@ -1,11 +1,15 @@
-	package src.pages;
+package src.pages;
 
-	import org.openqa.selenium.WebDriver;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
 	public class TShirt {
-		WebDriver driver;
+		
 		@FindBy(xpath="//h1[contains(text(),'Men Tshirts')]") 
 		public
 		WebElement headerMenTShirts;
@@ -18,49 +22,17 @@ import org.openqa.selenium.support.FindBy;
 		public
 		WebElement headerBrand;
 		
-		@FindBy(xpath="//label[contains(text(),'United')]") 
-		public
-		WebElement textBrandUnitedColorsOfBenetton;
-		
-		@FindBy(xpath="//label[contains(text(),'Tommy')]") 
-		public
-		WebElement textTommyHilfiger;
-		
 		@FindBy(xpath="//span[contains(text(),'Price')]") 
 		public
 		WebElement headerPrice;
-		
-		@FindBy(xpath="//label[contains(text(),'Rs. 359 to Rs. 1074')]") 
-		public
-		WebElement textPriceRangeOne;
-		
-		@FindBy(xpath="//label[contains(text(),'Rs. 1074 to Rs. 1789')]") 
-		public
-		WebElement textPriceRangeTwo;
 		
 		@FindBy(xpath="//span[contains(text(),'Color')]") 
 		public
 		WebElement headerColor;
 		
-		@FindBy(xpath="//label[contains(text(),'White')]") 
-		public
-		WebElement textColorWhite;
-		
-		@FindBy(xpath="//label[contains(text(),'Blue')]") 
-		public
-		WebElement textColorBlue;
-		
 		@FindBy(xpath="//span[contains(text(),'Discount')]") 
 		public
 		WebElement headerDiscountRange;
-		
-		@FindBy(xpath="//label[contains(text(),'30% and above')]")
-		public
-		WebElement textDiscount;
-		
-		@FindBy(xpath="//h4/a[contains(text(),'Solid Round Neck T-shirt')]") 
-		public
-		WebElement textSelectedTshirt;
 		
 		@FindBy(xpath="//p[(text()='L')]/parent::button") 
 		public
@@ -70,7 +42,42 @@ import org.openqa.selenium.support.FindBy;
 		public
 		WebElement buttonAddToBag;
 		
+		public void selectBrands(WebDriver driver){
+			List<WebElement> list = driver.findElements(By.xpath("//label[contains(text(),'United')]/parent::li/parent::ul/li"));
+	        	list.get(2).click();
+	        	list.get(3).click();
+		}
 		
+        public void selectPrice(WebDriver driver){
+        	List<WebElement> list = driver.findElements(By.xpath("//label[contains(text(),'Rs.')]/parent::li/parent::ul/li"));
+        	list.get(1).click();
+        	list.get(2).click();
+        	
+		}
+        
+        public void selectColor(WebDriver driver){
+        	List<WebElement> list = driver.findElements(By.xpath("//label[contains(text(),'Blue')]/parent::li/parent::ul/li"));
+        	list.get(2).click();
+        	list.get(3).click();
+		}
+        
+        public void selectDiscount(WebDriver driver){
+        	List<WebElement> list = driver.findElements(By.xpath("//label[contains(text(),' and above')]/parent::li/parent::ul/li"));
+        	list.get(1).click();
+			
+		}
+        
+        public void selectTshirt(WebDriver driver){
+        	List<WebElement> list = driver.findElements(By.xpath("//picture[@class='img-responsive']/ancestor::ul/li"));
+        	list.get(2).click();
+			
+		}
+        
+        public void waitForPageToLoad()
+        {
+        	TShirt tshirt1 = new TShirt();
+        	tshirt1.headerMenTShirts.isDisplayed();
+        }
 	}
 
 	
