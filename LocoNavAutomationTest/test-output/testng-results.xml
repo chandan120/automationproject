@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="29941" started-at="2019-07-20T15:13:29Z" finished-at="2019-07-20T15:13:59Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="29941" started-at="2019-07-20T15:13:29Z" finished-at="2019-07-20T15:13:59Z">
+      <class name="src.main.testcases.LaunchPage">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:src.main.testcases.LaunchPage@59ec2012]" name="setUpSuite" is-config="true" duration-ms="407" started-at="2019-07-20T20:43:28Z" finished-at="2019-07-20T20:43:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:src.main.testcases.LaunchPage@59ec2012]" name="launchApp" is-config="true" duration-ms="17522" started-at="2019-07-20T20:43:29Z" finished-at="2019-07-20T20:43:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="launchPage()[pri:0, instance:src.main.testcases.LaunchPage@59ec2012]" name="launchPage" duration-ms="6275" started-at="2019-07-20T20:43:46Z" finished-at="2019-07-20T20:43:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchPage -->
+        <test-method status="PASS" signature="tearDownMeth(org.testng.ITestResult)[pri:0, instance:src.main.testcases.LaunchPage@59ec2012]" name="tearDownMeth" is-config="true" duration-ms="4871" started-at="2019-07-20T20:43:52Z" finished-at="2019-07-20T20:43:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=launchPage status=SUCCESS method=LaunchPage.launchPage()[pri:0, instance:src.main.testcases.LaunchPage@59ec2012] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMeth -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:src.main.testcases.LaunchPage@59ec2012]" name="closeApp" is-config="true" duration-ms="1248" started-at="2019-07-20T20:43:57Z" finished-at="2019-07-20T20:43:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- src.main.testcases.LaunchPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
