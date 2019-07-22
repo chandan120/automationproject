@@ -34,13 +34,18 @@ import org.openqa.selenium.support.FindBy;
 		public
 		WebElement headerDiscountRange;
 		
-		@FindBy(xpath="//p[(text()='L')]/parent::button") 
+		@FindBy(xpath="//button[(text()='L')]") 
 		public
 		WebElement textSizeSelected;
 		
-		@FindBy(xpath="//div[contains(text(),'ADD TO BAG')]") 
+		@FindBy(xpath="//span[contains(text(),'Add to bag')]") 
 		public
 		WebElement buttonAddToBag;
+		
+		@FindBy(xpath="//span[contains(text(),'Bag')]") 
+		public
+		WebElement buttonBag;
+		
 		
 		public void selectBrands(WebDriver driver){
 			List<WebElement> list = driver.findElements(By.xpath("//label[contains(text(),'United')]/parent::li/parent::ul/li"));
@@ -80,6 +85,11 @@ import org.openqa.selenium.support.FindBy;
         	}
         	}
 			
+		}
+        
+        public void selectNewBrand(WebDriver driver){
+			List<WebElement> list = driver.findElements(By.xpath("//label[contains(text(),'United')]/parent::li/parent::ul/li"));
+	        	list.get(4).click();
 		}
         
         public void waitForPageToLoad()
