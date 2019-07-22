@@ -69,7 +69,16 @@ import org.openqa.selenium.support.FindBy;
         
         public void selectTshirt(WebDriver driver){
         	List<WebElement> list = driver.findElements(By.xpath("//picture[@class='img-responsive']/ancestor::ul/li"));
-        	list.get(2).click();
+//        	list.get(2).click();
+        	int i;
+        	for(i=0;i<list.size();i++)
+        	{
+        	if(i==2)
+        	{
+        		Actions action = new Actions(driver);
+    			action.moveToElement(list.get(2)).build().perform();
+        	}
+        	}
 			
 		}
         

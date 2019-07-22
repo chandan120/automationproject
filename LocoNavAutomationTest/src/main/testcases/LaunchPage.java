@@ -1,6 +1,9 @@
 package src.main.testcases;
 
 import src.pages.TShirt;
+
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import src.main.pages.BaseClass;
@@ -20,15 +23,14 @@ public class LaunchPage extends BaseClass{
 		tshirt.headerMenTShirts.isDisplayed();
 		tshirt.headerBrand.isDisplayed();
 		tshirt.selectBrands(driver);
-//		tshirt.waitForPageToLoad();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		tshirt.selectPrice(driver);
-//		tshirt.waitForPageToLoad();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		tshirt.selectColor(driver);
-//		tshirt.waitForPageToLoad();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		tshirt.selectDiscount(driver);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		tshirt.selectTshirt(driver);
-//		tshirt.textSizeSelected.click();
-			
 		
 	}
 }

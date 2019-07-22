@@ -5,9 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
-import src.pages.TShirt;
-
-public class MyntraHomePage extends TShirt{
+public class MyntraHomePage {
 		
 	
 		@FindBy(xpath="//a[contains(text(),'Men')]")
