@@ -1,12 +1,11 @@
 package src.main.testcases;
 
-import src.pages.TShirt;
-
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import src.main.pages.BaseClass;
+import src.main.pages.TShirt;
 import src.testcases.MyntraHomePage;
 
 public class LaunchPage extends BaseClass{
@@ -23,13 +22,13 @@ public class LaunchPage extends BaseClass{
 		tshirt.headerMenTShirts.isDisplayed();
 		tshirt.headerBrand.isDisplayed();
 		tshirt.selectBrands(driver);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		tshirt.selectPrice(driver);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		tshirt.selectColor(driver);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		tshirt.selectDiscount(driver);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		tshirt.selectTshirt(driver);
 		
 	}

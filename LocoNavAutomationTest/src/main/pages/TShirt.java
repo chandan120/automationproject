@@ -1,4 +1,4 @@
-package src.pages;
+package src.main.pages;
 
 import java.util.List;
 

@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22780" started-at="2019-07-22T07:59:06Z" finished-at="2019-07-22T07:59:28Z">
+  <suite name="Default suite" duration-ms="19980" started-at="2019-07-22T08:11:34Z" finished-at="2019-07-22T08:11:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22780" started-at="2019-07-22T07:59:06Z" finished-at="2019-07-22T07:59:28Z">
+    <test name="Default test" duration-ms="19980" started-at="2019-07-22T08:11:34Z" finished-at="2019-07-22T08:11:54Z">
       <class name="src.main.testcases.LaunchPage">
-        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:src.main.testcases.LaunchPage@589838eb]" name="setUpSuite" is-config="true" duration-ms="645" started-at="2019-07-22T13:29:05Z" finished-at="2019-07-22T13:29:06Z">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:src.main.testcases.LaunchPage@589838eb]" name="setUpSuite" is-config="true" duration-ms="624" started-at="2019-07-22T13:41:33Z" finished-at="2019-07-22T13:41:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method status="PASS" signature="launchApp()[pri:0, instance:src.main.testcases.LaunchPage@589838eb]" name="launchApp" is-config="true" duration-ms="11589" started-at="2019-07-22T13:29:06Z" finished-at="2019-07-22T13:29:17Z">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:src.main.testcases.LaunchPage@589838eb]" name="launchApp" is-config="true" duration-ms="10398" started-at="2019-07-22T13:41:34Z" finished-at="2019-07-22T13:41:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method status="PASS" signature="launchPage()[pri:0, instance:src.main.testcases.LaunchPage@589838eb]" name="launchPage" duration-ms="7942" started-at="2019-07-22T13:29:17Z" finished-at="2019-07-22T13:29:25Z">
+        <test-method status="PASS" signature="launchPage()[pri:0, instance:src.main.testcases.LaunchPage@589838eb]" name="launchPage" duration-ms="7491" started-at="2019-07-22T13:41:44Z" finished-at="2019-07-22T13:41:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchPage -->
-        <test-method status="PASS" signature="tearDownMeth(org.testng.ITestResult)[pri:0, instance:src.main.testcases.LaunchPage@589838eb]" name="tearDownMeth" is-config="true" duration-ms="1890" started-at="2019-07-22T13:29:25Z" finished-at="2019-07-22T13:29:27Z">
+        <test-method status="PASS" signature="tearDownMeth(org.testng.ITestResult)[pri:0, instance:src.main.testcases.LaunchPage@589838eb]" name="tearDownMeth" is-config="true" duration-ms="789" started-at="2019-07-22T13:41:52Z" finished-at="2019-07-22T13:41:53Z">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMeth -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:src.main.testcases.LaunchPage@589838eb]" name="closeApp" is-config="true" duration-ms="1325" started-at="2019-07-22T13:29:27Z" finished-at="2019-07-22T13:29:28Z">
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:src.main.testcases.LaunchPage@589838eb]" name="closeApp" is-config="true" duration-ms="1266" started-at="2019-07-22T13:41:53Z" finished-at="2019-07-22T13:41:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
